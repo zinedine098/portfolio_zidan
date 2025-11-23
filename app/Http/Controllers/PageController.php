@@ -8,11 +8,13 @@ class PageController extends Controller
 {
     public function beranda()
     {
-        $judul = 'Halaman Beranda';
+        $judul = 'Halaman shorcut link';
         $daftarArtikel = [
             ['id' => 1, 'judul' => 'youtube', 'link' => 'https://youtube.com'],
             ['id' => 2, 'judul' => 'google', 'link' => 'https://google.com'],
             ['id' => 3, 'judul' => 'instagram', 'link' => 'https://instagram.com'],
+            ['id' => 4, 'judul' => 'facebook', 'link' => 'https://facebook.com'],
+            ['id' => 5, 'judul' => 'pinterest', 'link' => 'https://pinterest.com'],
         ];
 
         // Kirim data ke view 'beranda' menggunakan compact()

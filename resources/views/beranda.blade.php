@@ -8,7 +8,7 @@
 <body>
     <div class="container mt-5">
         <h1>{{ $judul }}</h1>
-        <p>Daftar Artikel Terbaru:</p>
+        <p>Daftar shorcut Terbaru:</p>
         <ul class="list-group">
             @foreach ($daftarArtikel as $artikel)
                 <li class="list-group-item">
