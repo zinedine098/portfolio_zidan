@@ -14,17 +14,11 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-// Route untuk URL /about
-Route::get('/about', function () {
-    return view('about.index');
-});
+Route::get('/', [PageController::class, 'welcome']);
+
+Route::get('/about', [PageController::class, 'about']);
 
 Route::get('/profile', [PageController::class, 'profile']);
 
 Route::get('/beranda', [PageController::class, 'beranda']);
-
-

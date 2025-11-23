@@ -18,6 +18,7 @@ class PageController extends Controller
         // Kirim data ke view 'beranda' menggunakan compact()
         return view('beranda', compact('judul', 'daftarArtikel'));
     }
+
     public function profile()
     {
         $data = [
@@ -30,5 +31,15 @@ class PageController extends Controller
     // 2. Kirim data ke view 'selamat-datang'
     // Kunci array ('nama', 'pekerjaan') akan menjadi nama variabel di view
     return view('profile.index', $data);
+    }
+
+    public function about()
+    {
+    return view('about.index');
+    }
+
+    public function welcome()
+    {
+        return view('welcome');
     }
 }
